@@ -11,7 +11,7 @@
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),  ui(new Ui::MainWindow){
   ui->setupUi(this);
-  QString qdt_value = QDateTime::currentDateTime().toString("yyyy.mm.dd hh:mm");
+  QString qdt_value = QDateTime::currentDateTime().toString("yyyy.MM.dd HH:mm");
   ui->label_current_time->setText(qdt_value);
 }
 
